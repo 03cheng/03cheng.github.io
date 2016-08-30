@@ -90,7 +90,7 @@
 <meta property="og:url" content="http://yoursite.com/2015/03/28/Android信息存储之-json/index.html">
 <meta property="og:site_name" content="第十三个口袋的博客">
 <meta property="og:description" content="前言Android 存储数据有很多种方法，它们各自有各自的好处，JSON 就是其中一种。JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式，易于阅读和编写，同时也易于机器解析和生成。">
-<meta property="og:updated_time" content="2016-08-30T09:32:37.893Z">
+<meta property="og:updated_time" content="2016-08-30T09:36:07.113Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android信息存储之-JSON">
 <meta name="twitter:description" content="前言Android 存储数据有很多种方法，它们各自有各自的好处，JSON 就是其中一种。JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式，易于阅读和编写，同时也易于机器解析和生成。">
@@ -276,7 +276,7 @@
       
 
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Android 存储数据有很多种方法，它们各自有各自的好处，JSON 就是其中一种。<br>JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式，易于阅读和编写，同时也易于机器解析和生成。<br><a id="more"></a>我在经过 SQLite 数据库存储信息的学习之后，再学习 JSON 存储信息发现更加简单了。<br>与大家分享一下我的学习过程。</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Android 存储数据有很多种方法，它们各自有各自的好处，JSON 就是其中一种。<br>JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式，易于阅读和编写，同时也易于机器解析和生成。<a id="more"></a><br>我在经过 SQLite 数据库存储信息的学习之后，再学习 JSON 存储信息发现更加简单了。<br>与大家分享一下我的学习过程。</p>
 <h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>使用 JSON 存储数据。</p>
 <h3 id="导入-Gson-包"><a href="#导入-Gson-包" class="headerlink" title="导入 Gson 包"></a>导入 Gson 包</h3><p>首先从网上下载 Google 的 Gson 包，Gson 是 Google 提供的用来在 Java 对象和 JSON 数据之间进行映射的 Java 类库，可以把 Java 对象转换成 JSON 字符串，也可以将一个 JSON 字符串转成一个 Java 对象。<br>然后在工程中导入Gson包。</p>
 <h3 id="JSON-简单转换"><a href="#JSON-简单转换" class="headerlink" title="JSON 简单转换"></a>JSON 简单转换</h3><p>通过利用 Gson 中的方法将需要存储的信息通过 toJson 方法转换成字符串，当需要使用该信息时再通过 fromJson 方法将字符串转换成原来的类型。<br>简单的信息存储如：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//将作为 Student 类实例化的 student 对象转换成 JSON 字符串</span></div><div class="line">String string = gson.toJson(student,Student.class);</div><div class="line"></div><div class="line"><span class="comment">//将 JSON 字符串转换成 Student 类的对象</span></div><div class="line">Student student = gson.fromJson(string,Student.class);</div></pre></td></tr></table></figure></p>
