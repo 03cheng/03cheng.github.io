@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Android," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -84,16 +84,16 @@
 
 
 
-<meta name="description" content="前言Android 存储数据有很多种方法，它们各自有各自的好处，JSON 就是其中一种。JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式，易于阅读和编写，同时也易于机器解析和生成。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android信息存储之-JSON">
-<meta property="og:url" content="http://yoursite.com/2015/03/28/Android信息存储之-json/index.html">
+<meta property="og:title" content="电影网站集锦">
+<meta property="og:url" content="http://yoursite.com/2016/08/31/电影网站集锦/index.html">
 <meta property="og:site_name" content="03cheng's Blog">
-<meta property="og:description" content="前言Android 存储数据有很多种方法，它们各自有各自的好处，JSON 就是其中一种。JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式，易于阅读和编写，同时也易于机器解析和生成。">
-<meta property="og:updated_time" content="2016-08-30T13:27:06.564Z">
+<meta property="og:image" content="http://yoursite.com/2016/08/31/电影网站集锦/太阳系.png">
+<meta property="og:image" content="https://segmentfault.com/img/bVutft">
+<meta property="og:updated_time" content="2016-08-31T14:14:44.332Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android信息存储之-JSON">
-<meta name="twitter:description" content="前言Android 存储数据有很多种方法，它们各自有各自的好处，JSON 就是其中一种。JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式，易于阅读和编写，同时也易于机器解析和生成。">
+<meta name="twitter:title" content="电影网站集锦">
+<meta name="twitter:image" content="http://yoursite.com/2016/08/31/电影网站集锦/太阳系.png">
 
 
 
@@ -114,9 +114,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2015/03/28/Android信息存储之-json/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/08/31/电影网站集锦/"/>
 
-  <title> Android信息存储之-JSON | 03cheng's Blog </title>
+  <title> 电影网站集锦 | 03cheng's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -246,7 +246,7 @@
             
             
               
-                Android信息存储之-JSON
+                电影网站集锦
               
             
           </h1>
@@ -258,8 +258,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-03-28T22:41:06+08:00" content="2015-03-28">
-              2015-03-28
+            <time itemprop="dateCreated" datetime="2016-08-31T21:45:32+08:00" content="2016-08-31">
+              2016-08-31
             </time>
           </span>
 
@@ -269,8 +269,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/03/28/Android信息存储之-json/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/03/28/Android信息存储之-json/" itemprop="commentsCount"></span>
+                <a href="/2016/08/31/电影网站集锦/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/31/电影网站集锦/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -293,15 +293,8 @@
       
 
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Android 存储数据有很多种方法，它们各自有各自的好处，JSON 就是其中一种。<br>JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式，易于阅读和编写，同时也易于机器解析和生成。<a id="more"></a><br>我在经过 SQLite 数据库存储信息的学习之后，再学习 JSON 存储信息发现更加简单了。<br>与大家分享一下我的学习过程。</p>
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>使用 JSON 存储数据。</p>
-<h3 id="导入-Gson-包"><a href="#导入-Gson-包" class="headerlink" title="导入 Gson 包"></a>导入 Gson 包</h3><p>首先从网上下载 Google 的 Gson 包，Gson 是 Google 提供的用来在 Java 对象和 JSON 数据之间进行映射的 Java 类库，可以把 Java 对象转换成 JSON 字符串，也可以将一个 JSON 字符串转成一个 Java 对象。<br>然后在工程中导入Gson包。</p>
-<h3 id="JSON-简单转换"><a href="#JSON-简单转换" class="headerlink" title="JSON 简单转换"></a>JSON 简单转换</h3><p>通过利用 Gson 中的方法将需要存储的信息通过 toJson 方法转换成字符串，当需要使用该信息时再通过 fromJson 方法将字符串转换成原来的类型。<br>简单的信息存储如：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//将作为 Student 类实例化的 student 对象转换成 JSON 字符串</span></div><div class="line">String string = gson.toJson(student,Student.class);</div><div class="line"></div><div class="line"><span class="comment">//将 JSON 字符串转换成 Student 类的对象</span></div><div class="line">Student student = gson.fromJson(string,Student.class);</div></pre></td></tr></table></figure></p>
-<h3 id="与带泛型的List之间的转化"><a href="#与带泛型的List之间的转化" class="headerlink" title="与带泛型的List之间的转化"></a>与带泛型的List之间的转化</h3><p>实例化 Gson 对象，并创建字符串供后面使用。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">private</span> Gson gson = <span class="keyword">new</span> Gson();</div><div class="line"><span class="keyword">private</span> <span class="keyword">static</span> String s;</div></pre></td></tr></table></figure></p>
-<p>将 student 对象添加到链中然后将 students 链通过 toJson 转换为 JSON 字符串。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">jsonSave</span><span class="params">(Student student)</span> </span>&#123;</div><div class="line">	students.add(student);</div><div class="line">	s = gson.toJson(students);</div><div class="line">	send(student.getName());<span class="comment">//在通知栏发送通知</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>通过 fromJson 将JSON 字符串转换为原来的类型（通过TypeToken类的getType方法获取类型）<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">btnJson</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">try</span> &#123;</div><div class="line">		List&lt;Student&gt; students = gson.fromJson(s, <span class="keyword">new</span> TypeToken&lt;List&lt;Student&gt;&gt;() &#123;</div><div class="line">		&#125;.getType());</div><div class="line">		Bundle data = <span class="keyword">new</span> Bundle();</div><div class="line">		data.putSerializable(<span class="string">"data"</span>, toList(students));<span class="comment">//将students链转换为可打印的链</span></div><div class="line">		Intent intent = <span class="keyword">new</span> Intent(InputActivity.<span class="keyword">this</span>, PrintActivity.class);</div><div class="line">		intent.putExtras(data);</div><div class="line">		startActivity(intent);</div><div class="line">	&#125; <span class="keyword">catch</span> (JsonSyntaxException e) &#123;</div><div class="line">		e.printStackTrace();</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>JSON 存储信息的确很方便，但是本例中存在以下问题：由于字符串是同一个，所以当退出程序再进行输入时之前的字符串会被当前内容所覆盖导致信息丢失，也许是我没有找到解决方法的原因。</p>
-<p><strong>版权声明：本文为博主原创文章，转载请注明出处 <a href="http://03cheng.github.io" target="_blank" rel="external">03cheng’s Blog</a></strong></p>
+        <img src="/2016/08/31/电影网站集锦/太阳系.png" alt="This is an example image" title="This is an example image">
+<p><img src="https://segmentfault.com/img/bVutft" alt="图片"></p>
 
       
     </div>
@@ -322,28 +315,18 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/Android/" rel="tag">#Android</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/03/28/Android信息存储之-SQL/" rel="next" title="Android信息存储之-SQL">
-                <i class="fa fa-chevron-left"></i> Android信息存储之-SQL
+              <a href="/2016/08/29/视频解析播放/" rel="next" title="视频解析播放">
+                <i class="fa fa-chevron-left"></i> 视频解析播放
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/03/29/Android信息存储之-XML/" rel="prev" title=" Android信息存储之-XML">
-                 Android信息存储之-XML <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -358,10 +341,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2015/03/28/Android信息存储之-json/"
-     data-title="Android信息存储之-JSON"
+        <div class="ds-share flat" data-thread-key="2016/08/31/电影网站集锦/"
+     data-title="电影网站集锦"
      data-content=""
-     data-url="http://yoursite.com/2015/03/28/Android信息存储之-json/">
+     data-url="http://yoursite.com/2016/08/31/电影网站集锦/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -391,8 +374,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/03/28/Android信息存储之-json/"
-           data-title="Android信息存储之-JSON" data-url="http://yoursite.com/2015/03/28/Android信息存储之-json/">
+      <div class="ds-thread" data-thread-key="2016/08/31/电影网站集锦/"
+           data-title="电影网站集锦" data-url="http://yoursite.com/2016/08/31/电影网站集锦/">
       </div>
     
   </div>
@@ -476,7 +459,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正文"><span class="nav-number">2.</span> <span class="nav-text">正文</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#导入-Gson-包"><span class="nav-number">2.1.</span> <span class="nav-text">导入 Gson 包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JSON-简单转换"><span class="nav-number">2.2.</span> <span class="nav-text">JSON 简单转换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#与带泛型的List之间的转化"><span class="nav-number">2.3.</span> <span class="nav-text">与带泛型的List之间的转化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
         </section>
