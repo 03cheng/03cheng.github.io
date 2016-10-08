@@ -4,6 +4,14 @@
   
     
     <entry>
+      <title><![CDATA[天气API]]></title>
+      <url>http://yoursite.com/2016/10/08/%E5%A4%A9%E6%B0%94API/</url>
+      <content type="html"><![CDATA[<p><a href="http://www.heweather.com/" target="_blank" rel="external">和风天气</a><br><a href="https://mynook.info/blog/post/weather-com-cn-api" target="_blank" rel="external">中国天气网API</a><br><a href="http://www.weather.com.cn/" target="_blank" rel="external">中国天气网</a><br><a href="http://www.thinkpage.cn/" target="_blank" rel="external">心知天气</a><br><a href="http://developer.baidu.com/map/carapi-7.htm" target="_blank" rel="external">车联网API</a><br><a href="https://weather.com/zh-CN" target="_blank" rel="external">The Weather Channel</a><br><a href="http://apistore.baidu.com/apiworks/servicedetail/478.html" target="_blank" rel="external">中国和世界天气预报</a></p>
+<p><a href="http://apistore.baidu.com/astore/servicesearch?word=%E5%A4%A9%E6%B0%94&amp;searchType=null" target="_blank" rel="external">百度API Store</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[个人博客搭建过程]]></title>
       <url>http://yoursite.com/2016/09/18/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</url>
       <content type="html"><![CDATA[<p><a href="http://cyzus.github.io/2015/06/21/github-build-blog/" target="_blank" rel="external">傻瓜都可以利用github pages建博客</a><br><a href="http://opiece.me/2015/04/09/hexo-guide/" target="_blank" rel="external">使用Hexo搭建个人博客(基于hexo3.0)</a><br><a href="http://drubear.github.io/2016/01/28/手把手教你用Hexo在GitHub搭建博客/" target="_blank" rel="external">手把手教你用Hexo在GitHub搭建博客</a><br><a href="http://www.cnblogs.com/tocy/p/npp-support-markdonw-extension.html" target="_blank" rel="external">Notepad++中支持Markdown</a><br><a href="http://www.jianshu.com/p/a2fe56d11c4f" target="_blank" rel="external">搭建Hexo博客中碰到的坑</a><br><a href="http://wowubuntu.com/markdown/#html" target="_blank" rel="external">Markdown语法说明</a><br><a href="https://segmentfault.com/a/1190000002632530" target="_blank" rel="external">hexo常用命令笔记</a></p>
